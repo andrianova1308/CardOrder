@@ -14,15 +14,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CardOrderTest {
 
-    private WebDriver driver;
+    WebDriver driver;
 
     @BeforeAll
-    static void setUp() {
+    static void setup() {
         WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
-    public void setUpOptions() {
+    public void setupOptions() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
