@@ -44,7 +44,6 @@ public class CardOrderTest {
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.tagName("button")).click();
 
-
         String text = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
     }
@@ -55,7 +54,6 @@ public class CardOrderTest {
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79563564112");
         driver.findElement(By.cssSelector("[data-test-id=agreement")).click();
         driver.findElement(By.tagName("button")).click();
-
 
         String text = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
